@@ -207,13 +207,15 @@ System::Void IndividualProject::MyTestForm::TaskGeneration(int* p_cc)
 		
 		System::String^ b_sysstr = msclr::interop::marshal_as<System::String^>(b_textview);
 
-		this->taskLabel->Text = ("Музыкальный фрагмент был записан в формате " + S_sysstr +", оцифрован и сохранён в виде файла без использования сжатия данных.");
-		this->taskLabel->Text = "Размер полученного файла – " + I + " Мбайт. ";
+		this->taskLabel->Text = "Музыкальный фрагмент был записан в формате " + S_sysstr +", оцифрован и сохранён в виде файла без использования сжатия данных.";
+		this->taskLabel->Text += "Размер полученного файла – " + I + " Мбайт. ";
 
 		if (S == 1) S = 2;
 		else S = 1;
 		if (S == 1) S_textview = "моно";
 		if (S == 2) S_textview = "стерео";
+
+		S_sysstr = msclr::interop::marshal_as<System::String^>(S_textview);
 
 		this->taskLabel->Text += "\nЗатем тот же музыкальный фрагмент был записан повторно в формате " + S_sysstr + " и оцифрован с разрешением " + b_sysstr + " и частотой дискретизации " + f_sysstr + ", чем в первый раз. Сжатие данных не производилось.";
 		this->taskLabel->Text += "\nУкажите размер файла в Мбайт, полученного при повторной записи. В ответе запишите только целую часть, единицу измерения писать не нужно.";

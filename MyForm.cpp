@@ -33,7 +33,7 @@ System::Void IndividualProject::MyForm::button_StartTest_Click(System::Object^ s
 
 System::Void IndividualProject::MyForm::buttonProgramInfo_Click(System::Object^ sender, System::EventArgs^ e)
 {
-	MessageBox::Show("Вас приветствует тренажёр для подготовки к ЕГЭ по информатике.\n\nДля запуска теста нажмите <<Запустить тест>>.\nЧтобы закрыть приложение и выйти на рабочий стол, нажмите <<Выход>>.\n\nАдрес эл.почты для технической поддержки - nikita.dolb@gmail.ru \n\nЖелаем вам продуктивной работы.","Информация");
+	MessageBox::Show("Вас приветствует тренажёр для подготовки к ЕГЭ по информатике.\n\nДля запуска теста нажмите <<Запустить тест>>.\nЧтобы закрыть приложение и выйти на рабочий стол, нажмите <<Выход>>.\n\nАдрес эл.почты для технической поддержки - nikita.dolb@gmail.com \n\nЖелаем вам продуктивной работы.","Информация");
 	return System::Void();
 }
 

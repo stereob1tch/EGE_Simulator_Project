@@ -251,7 +251,7 @@ namespace IndividualProject {
 			// 
 			// taskLabel
 			// 
-			this->taskLabel->Font = (gcnew System::Drawing::Font(L"Courier New", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->taskLabel->Font = (gcnew System::Drawing::Font(L"Courier New", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->taskLabel->Location = System::Drawing::Point(10, 60);
 			this->taskLabel->Name = L"taskLabel";
